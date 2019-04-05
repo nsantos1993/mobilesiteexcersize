@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Mobile CSS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="logo">My Site</h1>
+            <div id="mobilenav"><a href="#">&#9776</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col c50">
+                    <h2>OW NYXL ChiLLz</h2>
+                    <img src="assets/img/djlucio.jpg">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="col c25">
+                    <img src="assets/img/sombra.png">
+                    <h2>Sombra</h2>
+                    <p>Drops EMPs, Hacks Enemys, Can turn invisible, Carrys around a machine gun, Has a teleporter mine.</p>
+                </div>
+                <div class="col c25">
+                    <img src="assets/img/soldier76.gif">
+                    <h2>Soldier 76</h2>
+                    <p>Ultimate automatically locks onto targets when firing his Assault Rifle, Drops down a healing pad, Can shoot missiles, One of the few heroes that can run in game.</p>
+                </div>
+                <div class="col c25">
+                    <img src="assets/img/junkrat.gif">
+                    <h2>Junkrat</h2>
+                    <p>Carrys a grenade launcher, Also 2 mine grenades, A limp when he walks, Ultimate is a rip tire that explodes. Can drop down a trap to tap his enemys.</p>
+                </div>
+                <div class="col c25">
+                    <img src="assets/img/lucio.gif">
+                    <h2>Lucio</h2>
+                    <p>Power to heal teammates, Speed up teammates, Carrys a sonic boom gun that shoots a sonic blast out of it, Is a DJ, Boops people away, Ultimate is dropping the beat from his sonic boom gun which gives teammates a extra 750 health for a limited amount of time.</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $('#mobilenav').click(function(){
+                $('nav').toggle();
+            });
+            
+            $(window).resize(function(){
+            if(window.innerWidth > 575){
+               $('nav').show();
+               };
+            });
+            
+            
+            
+        </script>
+        <center>
+        <div class="container">
+    <div class="col c2" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24197.494471661772!2d-73.92395125124754!3d40.70289481190112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e8348533623%3A0xcd7eb3cf010980d4!2sRidgewood%2C+Queens%2C+NY!5e0!3m2!1sen!2sus!4v1552056851556" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="col c2">
+        <h1>Contact Me</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <form>
+            <label>Name<br>
+                <input type="text" name="name">
+            </label>
+            <br>
+            <label>Email<br>
+                <input type="email" name="eml">
+            </label>
+            <br>
+            <label>Message<br>
+                <textarea name="msg"></textarea>
+            </label>
+            <br>
+            <input type="submit" value="Email Now" class="btn">
+        </form>
+    </div>
+</div>
+        
+        <footer>
+        <p>© 2019. All rights reserved.</p>
+    </footer>
+        </center>
+    </body>
+</html>
